@@ -2,13 +2,13 @@ public class Stack<T> {
     private T[] data;
     private int topIndexLocation; //top = 0, -1
 
-    @SuppressWarnings("uncheck")
+    @SuppressWarnings("unchecked")
     public Stack() {
         data = (T[]) new Object[100]; //int, double, obj== Integer
         topIndexLocation = -1;
     }
     
-    @SuppressWarnings("uncheck")
+    @SuppressWarnings("unchecked")
     public Stack(int maximumSizeGiveByUser) {
         data = (T[]) new Object[maximumSizeGiveByUser]; // new int[100]
         topIndexLocation = -1;
